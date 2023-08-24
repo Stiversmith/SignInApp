@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--App-->
+        <scene sceneID="F5P-Yf-eM1">
+            <objects>
+                <viewController id="S46-pq-QWo" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="LNi-2V-W4B">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="rWw-Cj-Uew"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="App" image="trash.slash" catalog="system" id="2KL-WU-Hae"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ttl-H4-Chd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="495" y="-1193"/>
+        </scene>
+        <!--Profile-->
+        <scene sceneID="PYy-MT-yjU">
+            <objects>
+                <viewController id="Sgk-Dj-2Di" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="KAv-vS-6XX">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="YHF-aE-gya"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Profile" image="trash.slash.fill" catalog="system" id="R9H-EL-N5i"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Mt6-fr-v4D" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="494" y="-523"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="me1-A3-LuS">
+            <objects>
+                <tabBarController id="nbx-p2-A0j" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="JzE-P6-WrV">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="Sgk-Dj-2Di" kind="relationship" relationship="viewControllers" id="A39-FE-2Bm"/>
+                        <segue destination="S46-pq-QWo" kind="relationship" relationship="viewControllers" id="aEI-5P-wBl"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Wqb-2I-yA8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-405" y="-777"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="trash.slash" catalog="system" width="117" height="128"/>
+        <image name="trash.slash.fill" catalog="system" width="119" height="128"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
